@@ -22,6 +22,8 @@ typedef void(^HFTimerBlock) (HFTimer *timer, NSTimeInterval interval);
                                    repeat:(BOOL)repeat
                                   fireNow:(BOOL)fireNow
                                timerBlock:(HFTimerBlock)timerBlock;
+// 重置timer的开始时间
+- (void)resetTimerStartTime;
 
 @end
 

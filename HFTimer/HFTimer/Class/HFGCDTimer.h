@@ -16,6 +16,8 @@ typedef void(^HFGCDTimerBlock) (HFGCDTimer *timer, NSTimeInterval timeInterval);
 + (instancetype)timerWithTimerInterval:(NSTimeInterval)timeInterval fireNow:(BOOL)fireNow timerBlock:(HFGCDTimerBlock)timerBlock;
 - (void)startTimer;
 - (void)stopTimer;
+// 重置timer的开始时间
+- (void)resetTimerStartTime;
 
 @end
 

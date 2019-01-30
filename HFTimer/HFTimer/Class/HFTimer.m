@@ -52,6 +52,11 @@
     }
 }
 
+// 重置timer的开始时间
+- (void)resetTimerStartTime {
+    self.startTime = 0;
+}
+
 #pragma mark - private methods
 
 - (void)clearTimer {
